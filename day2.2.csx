@@ -5,6 +5,8 @@ int aim = 0;
 string subOperator;
 int subOperand;
 string[] splitLine;
+
+// look through file, split line into operator & operand, change values based on case
 foreach (string line in File.ReadLines(@"day2.txt"))
 {
     splitLine = line.Split(' ');
